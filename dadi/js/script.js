@@ -3,11 +3,11 @@ const button = document.querySelector('#btn');
 
 button.addEventListener('click', function(){
 
-    // Chiedo all'utente un numero tra 1 e 6
-    let numero_utente = prompt('Inserisci un numero tra 1 e 6');
-    console.log('numero utente: ' + numero_utente);
+    // Generare all'utente un numero tra 1 e 6
+    let numeroUtente = Math.floor(Math.random() * 6) + 1;
+    console.log('numero utente: ' + numeroUtente);
 
-    // Genero un numero casuale
+    // Generare al pc un numero tra 1 e 6
     let numeroPc = Math.floor(Math.random() * 6) + 1;
     console.log('numero pc: ' + numeroPc);
 
